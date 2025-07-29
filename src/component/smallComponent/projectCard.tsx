@@ -29,7 +29,7 @@ const ProjectCard = ({ img, title, desc, tech, github, live, capt }: projectProp
                     </div>
                     <div className="lg:text-lg font-light">
                         <strong className="italic">Live Demo : </strong>
-                        <a className={`${live === "Available upon request." ? "cursor-not-allowed pointer-events-none" : "underline hover:text-blue-500"}`} href={live} target="_blank" rel="noopener noreferrer"><span className={`${live == "Available upon request." ? "inline-block" : "hidden lg:inline-block"}`}>{live}</span><span className={`${live == "Available upon request" ? "hidden" : "lg:hidden"} underline text-blue-400`}>Click Here</span></a>
+                        <a className={`${live === "Available upon request." ? "cursor-not-allowed pointer-events-none" : "underline hover:text-blue-500"}`} href={live} target="_blank" rel="noopener noreferrer"><span className={`${live == "Available upon request." ? "inline-block" : "hidden lg:inline-block"}`}>{live}</span><span className={`${live == "Available upon request." ? "hidden" : "lg:hidden"} underline text-blue-400`}>Click Here</span></a>
                     </div>
                 </div>
 
