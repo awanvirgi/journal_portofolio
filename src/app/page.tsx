@@ -6,6 +6,8 @@ import SkillSection from "../component/skillSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
 import ProjectSection from "@/component/projectSection";
+import CitationSection from "@/component/citationSection";
+import Header from "@/component/smallComponent/header";
 
 export default function Home() {
     const cursorRef = useRef<HTMLDivElement | null>(null);
@@ -33,12 +35,15 @@ export default function Home() {
                 style={{ left: `${position.x}px`, top: `${position.y}px` }}>
                 <FontAwesomeIcon icon={faArrowPointer} className="text-2x" />
             </div>
-            <div className="max-w-[1080px]">
+            <div className="max-w-[1080px] flex-1">
+                <Header page={1} />
                 <HeroSection />
                 <SkillSection />
             </div>
-            <div className="max-w-[1080px] lg:min-w-[1080px]">
+            <div className="max-w-[1080px] grow h-full lg:min-w-[1080px] flex-1">
+                <Header page={2} />
                 <ProjectSection />
+                <CitationSection />
             </div>
 
         </div>

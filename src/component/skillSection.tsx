@@ -2,7 +2,7 @@ const SkillSection = () => {
     return (
         <div className="bg-white px-4 py-2 lg:px-17 lg:pb-11">
             <div className="gap-6 grid lg:grid-cols-2 grid-cols-1">
-                <div className="">
+                <section id="skills" className="">
                     <h3 className="lg:text-3xl text-xl font-semibold mb-4">1. Skills</h3>
                     <p className="lg:text-2xl text-base text-justify lg:indent-5 indent-8">Here are the technologies I use to build full-stack and real-time web applications</p>
                     <div className="flex flex-col items-center mt-4">
@@ -53,8 +53,8 @@ const SkillSection = () => {
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div>
+                </section>
+                <section id="experiences">
                     <h3 className="lg:text-3xl text-xl font-semibold mb-4">2. Experiences</h3>
                     <div className="mb-4">
                         <h4 className="lg:text-2xl text-base text-justify font-semibold mb-2">2.1 Studi Independent Full-Stack Web Developer at Skilvul</h4>
@@ -64,9 +64,9 @@ const SkillSection = () => {
                         <h4 className="lg:text-2xl text-base text-justify font-semibold mb-2">2.2 Laboratory Assistant at Fasilkom Singaperbangsa University Karawang</h4>
                         <p className="lg:text-2xl text-base text-justify lg:indent-5 indent-8">From January 2023 to June 2025 ,I am Assisted lecturers and guided students in practical sessions for courses such as Web-Based Programming, Databases, Algorithms and Data Structures, and Blockchain, while maintaining and updating lab applications and preparing all computers for use.</p>
                     </div>
-                </div>
+                </section >
             </div>
-            <hr className="font-bold h-[3px] bg-black border-0 rounded mb-1.5 mt-12" />
+            <hr className="font-bold h-[3px] bg-black border-0 rounded mb-8 lg:mt-12  " />
         </div>
     )
 }

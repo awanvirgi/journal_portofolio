@@ -7,8 +7,7 @@ import Header from "./smallComponent/header";
 const HeroSection = () => {
     const [hiddenTooltip, setHiddenTooltip] = useState(true)
     return (
-        <div className="bg-white px-4 py-2 lg:px-17 lg:py-11">
-            <Header />
+        <section id="header" className="bg-white px-4 py-2 lg:px-17 lg:pb-11">
             <h1 className="text-4xl lg:text-[115px] font-bold mt-16">
                 <TypeAnimation
                     sequence={[
@@ -46,7 +45,7 @@ const HeroSection = () => {
                     </ul>
                     <div className="lg:self-start self-center">
                         <span>
-                            <a className="transition-all lg:text-xl text-xs underline animate-pulse text-blue-700 lg:bg-transparent lg:hover:bg-red-500 lg:hover:text-white rounded hover:no-underline p-2" href="">CV (PDF)</a>
+                            <a className="transition-all lg:text-xl text-sm underline animate-pulse text-blue-700 lg:bg-transparent lg:hover:bg-red-500 lg:hover:text-white rounded hover:no-underline p-2" href="/cv/CV_VIRGIAWAN-SANRIA.pdf" download={true}>CV (PDF)</a>
                         </span>
                     </div>
                 </div>
@@ -64,16 +63,16 @@ const HeroSection = () => {
                                     <h5 className="lg:text-base text-xs">Client</h5>
                                 </div>
                                 <hr className="my-1.5" />
-                                <p className="lg:text-base text-xs text-start">U means "Developer" right?</p>
+                                <p className="lg:text-base text-xs text-start">Especially the front end, but the others still work</p>
                             </div>
                         </span>. I enjoy delivering innovative solutions through every web project I work on. Let's explore my achievements and creations in the world of web."
 
                     </div>
-                    <p className="lg:text-2xl text-sm font-light mt-2 whitespace-nowrap">keyword: front-end, back-end, real-time, web app, portfolio</p>
+                    <p className="lg:text-2xl text-sm font-light mt-2 lg:whitespace-nowrap">keyword: front-end, back-end, real-time, web app, portfolio</p>
                 </div>
             </div>
             <hr className="font-bold h-[3px] bg-black border-0 rounded mb-1.5 lg:mt-8 mt-4" />
-        </div>
+        </section>
     )
 }
 
