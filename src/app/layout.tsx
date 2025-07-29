@@ -39,7 +39,7 @@ import "./globals.css";
 // });
 
 export const metadata: Metadata = {
-    title: "PORTOFOLIO | Virgiawan Sanria",
+    title: "Virgiawan Sanria | Portofolio",
     description: "  ",
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
             <body className={`antialiased`}>
                 {children}
             </body>
